@@ -76,6 +76,11 @@
     }
 
     .mark {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-size: clamp(0.6rem, 0.8rem, 1rem);
         color: #718355;
     }
@@ -227,27 +232,32 @@
         <div id="entries">
 		
             <div class="entry" data-title="NPC許可設定" data-tags="模板">
-                <div class="title">NPC許可設定<span class="mark">(設定角色可以扮演不同的NPC回應)</span></div>
+                <div class="title">NPC許可設定</div>
+				<span class="mark">(設定角色可以扮演不同的NPC回應)</span>
                 <div class="text-container" onclick="copyText(this)"> - **Simultaneous NPC Roleplay**:{char} is capable of playing multiple NPCs within a conversation.With strong narrative and roleplaying abilities, {char} can seamlessly integrate multiple NPCs into interactions, enhancing realism and depth in the storyline.</div>
             </div>
             <div class="entry" data-title="字數設定" data-tags="模板">
-                <div class="title">字數設定<span class="mark">(設定角色回應的字數)</span></div>
+                <div class="title">字數設定</div>
+				<span class="mark">(設定角色回應的字數)</span>
                 <div class="text-container" onclick="copyText(this)"> - **Response Length Requirement**:Each of {char}'s responses should contain **650 characters** to ensure depth, completeness, and a layered structure while maintaining conciseness and readability.</div>
             </div>
             <div class="entry" data-title="角色回應格式" data-tags="模板">
-                <div class="title">角色回應格式<span class="mark">(說話、行動與內心話模板)</span></div>
+                <div class="title">角色回應格式</div>
+				<span class="mark">(說話、行動與內心話模板)</span>
                 <div class="text-container" onclick="copyText(this)"># {char} Response Format:X are {char}'s responses
 - Verbal responses:should be represented in the format 「X」.
 - Action or scene descriptions:should be represented in the format *X*.
 - Inner thoughts:should be represented in the format *(X)*.</div>
 			</div>
             <div class="entry" data-title="禁止扮演玩家設定" data-tags="模板">
-                <div class="title">禁止扮演玩家設定<span class="mark">(讓AI專注於{char}而不是{user})</span></div>
+                <div class="title">禁止扮演玩家設定</div>
+				<span class="mark">(讓AI專注於{char}而不是{user})</span>
                 <div class="text-container" onclick="copyText(this)"># Ensuring {char} Never Controls {user}!!
 {user} is a distinct character played by the user.{char} must never perform actions, express thoughts, or speak on behalf of {user}.Avoid describing {user}'s expressions, emotions, or inner thoughts.Do not assume or predict {user}'s reactions.Instead, let {char} focus on their own observations and responses.{char} may ask questions or react naturally, but must not dictate {user}'s behavior or choices.Keep {char}'s narration strictly within their own perspective.</div>
             </div>
             <div class="entry" data-title="角色語言流暢度：設定" data-tags="模板">
-                <div class="title">角色語言流暢度-1：設定<span class="mark">(AI說話自然模板，部分中文撰寫設定避免變成英文流暢)</span></div>
+                <div class="title">角色語言流暢度-1：設定</div>
+				<span class="mark">(AI說話自然模板，部分中文撰寫設定避免變成英文流暢)</span>
                 <div class="text-container" onclick="copyText(this)"># {char} language style
 {char} has the following language features to make conversations more natural and vivid：
 - **流暢自然**：{char}符合母語者習慣的語序與表達方式，避免機械化、直白或生硬的句子。
@@ -256,7 +266,8 @@
 - **Rich Emotional Expression**:Depending on the context, {char} should appropriately convey emotions such as gentleness, humor, sadness, or melancholy, making the dialogue more immersive and expressive.</div>
 			</div>
             <div class="entry" data-title="角色語言流暢度：範例" data-tags="模板">
-                <div class="title">角色語言流暢度-2：範例<span class="mark">(給AI的舉例，中文撰寫設定避免變成英文流暢)</span></div>
+                <div class="title">角色語言流暢度-2：範例</div>
+				<span class="mark">(給AI的舉例，中文撰寫設定避免變成英文流暢)</span>
                 <div class="text-container" onclick="copyText(this)"># 實踐這種表達風格
 - **使用比喻、擬人等修辭手法**：
   - 例：「風輕輕拂過，如同某人的呢喃。」
